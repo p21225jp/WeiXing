@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>B360 GAMMING PRO CARBON</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Custom CSS -->
 	<style>
 		body {
@@ -12,15 +13,23 @@
 
 		.mbWrapper {
 			max-width: 750px;
-			padding: 20px;
 			background-color: #000;
 			margin: 0 auto;
 		}
 
 		table {
 			width: 100%;
+			border-spacing: 0;
+			border: 0;
+			padding: 0;
+
 		}
 
+		tbody,tr,td{
+			border-spacing: 0;
+			border: 0;
+			padding: 0;
+		}
 		.head {
 			font-size: 20px;
 			line-height: 1.1em;
@@ -38,7 +47,7 @@
 			text-transform: uppercase;
 			color: #e5e5e5;
 		}
-
+		
 		.description {
 			font-family: 'Open Sans';
 			font-size: 13px;
@@ -48,7 +57,7 @@
 
 		.subtitle {
 			font-family: 'Open Sans';
-			font-size: 13px;
+			font-size: 18px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			font-weight: bold;
@@ -65,7 +74,7 @@
 		.list-right,
 		.list-left {
 			font-family: 'Open Sans';
-			font-size: 11px;
+			font-size: 13px;
 			color: #fff;
 		}
 
@@ -73,7 +82,10 @@
 			color: #FFF;
 			margin: 0;
 		}
-
+		.specs-right {
+			border-spacing: 5px;
+			font-family: "Microsoft YaHei";
+		}
 		.text-left {
 			text-align: left;
 		}
@@ -119,21 +131,12 @@
 			margin: 0;
 		}
 
-		.specs-left {
-			border-spacing: 5px 10px;
-		}
-
-		.specs-right {
-			border-spacing: 5px 10px;
-		}
 
 		.w-14-px {
 			width: 14px;
 		}
 
-		.border {
-			border: 4px solid #e60014;
-		}
+
 
 		.rgb-border {
 			border: 4px solid transparent;
@@ -152,17 +155,15 @@
 			padding-top: 0;
 		}
 
-		.vendors {
-			padding-left: 3%;
-		}
+
 
 		.black-bg {
 			background: #000;
 		}
 
 		.core-boost {
-			background: url("https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-core_boost.png");
-			min-height: 450px;
+			background: url("images/PWN_IC.png");
+			min-height: 474px;
 			background-repeat: no-repeat;
 		}
 
@@ -254,9 +255,7 @@
 
 		/* Table Cellspacing */
 
-		.cs-10 {
-			border-spacing: 10px;
-		}
+
 
 		/* height */
 
@@ -326,7 +325,7 @@
 		/* image */
 
 		.overview img {
-			width: 100%
+			max-width: 100%
 		}
 
 		.mystic-light-app img {
@@ -421,9 +420,15 @@
 			font-size: 36px;
 			font-weight: bold;
 			font-family: 'Open Sans', arial, sans-serif;
-			line-height: 32px;
+			line-height: 36px;
 			text-align: center;
-			padding: 20px 0;
+			background: url(images/title-bg.png);
+			height: 113px;
+			color: red;
+
+		}
+		.head .title {
+			margin-top: -36px;
 		}
 
 		.head-2 {
@@ -436,9 +441,9 @@
 
 		.description {
 			padding-bottom: 10px;
-			font-size: 14px;
+			font-size: 18px;
 			font-weight: normal;
-			text-align: left;
+			text-align: center;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 			line-height: 22px;
 			text-align: center;
@@ -447,7 +452,12 @@
 </head>
 
 <body>
-	<table class="mbWrapper">
+	<table class="mbWrapper" cellpadding="0" cellspacing="0">
+	   <tr>
+	   	<td class="head-title">
+	   		B360 GAMMING PRO CARBON
+	   	</td>
+	   </tr>
 		<tr>
 			<td>
 				<!-- BOARD OVERVIEW -->
@@ -460,16 +470,6 @@
 								<tr>
 									<td class="va-top w-p-100">
 										<table class="paragraph-center a-center w-p-100">
-											<tr>
-												<td class="head-2">
-													B360 GAMING PRO CARBON
-												</td>
-											</tr>
-											<tr>
-												<!-- <td class="head">
-													GAME IN STYLE
-												</td> -->
-											</tr>
 										</table>
 									</td>
 								</tr>
@@ -483,9 +483,14 @@
 									<td class="va-top w-p-100">
 										<table class="cs-10">
 											<tr>
-												<td class="list-left w-p-23 f-left">
+												<!-- <td class="list-left w-p-23 f-left">
 													<table class="specs-left">
-														<tr>
+														
+													</table>
+												</td> -->
+												<td class="list-right w-p-40 f-right">
+													<table class="specs-right" cellspacing="5">
+													    <tr>
 															<td class="number-left w-14-px">
 																1
 															</td>
@@ -525,11 +530,8 @@
 																带光纤S/PDIF的镀金音频接口
 															</td>
 														</tr>
-													</table>
-												</td>
-												<td class="list-right w-p-40 f-right">
-													<table class="specs-right">
 														<tr>
+
 															<td class="number-right w-14-px">
 																6
 															</td>
@@ -586,8 +588,11 @@
 														</tr>
 													</table>
 												</td>
-												<td class="overview w-p-35 full-width f-left">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-b360_gaming_pro_carbon_hero.png"
+												<td class="overview w-p-55 full-width f-left" style="position: relative;">
+												    <div class="color-run">
+												    	<img src="images/color-run1.png">
+												    </div>
+													<img style="position: absolute;top: 0;left: 0;z-index: 10;width: 83%;" src="images/msi-b360_gaming_pro_carbon_hero.png"
 													 alt="MSI B360 GAMING PRO CARBON overview">
 												</td>
 											</tr>
@@ -613,7 +618,7 @@
 							<table class="w-p-100">
 								<tr>
 									<td class="head">
-										个性化游戏装备
+										<div class="title">个性化游戏装备</div>
 									</td>
 								</tr>
 								<tr>
@@ -622,7 +627,8 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="mystic-light-case va-bottom w-p-50 full-width">
+									<td class="mystic-light-case va-bottom w-p-50 full-width" style="position: relative;">
+									    <img style="position: absolute;z-index: 1;top: 0;left: 112px;" class="color-run" src="images/msi-b360_gaming_pro_carbon-mysticlight-hero-case-lights.png">
 										<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-b360_gaming_pro_carbon-mysticlight-hero-case-lights.png"
 										 class="w-p-100" alt="MSI B360 GAMING PRO CARBON Mystic Light">
 									</td>
@@ -674,27 +680,8 @@
 							</table>
 						</td>
 					</tr>
-					<tr>
-						<td class="works-with-vendors subscript text-center va-bottom">
-							<strong>与认证的Mystic Light Sync产品配合使用：</strong>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table class="w-p-100">
-								<tr>
-									<td class="mystic-light-sync red-border-right text-center vertical-middle w-p-20">
-										<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/mystic-light-sync-logo-light.png"
-										 alt="Mystic Light Sync logo">
-									</td>
-									<td class="vendors">
-										<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/mystic_light-compatibility-vendors-light.png"
-										 alt="Mystic Light vendors">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
+
+
 					<tr>
 						<td class="h-60">
 						</td>
@@ -710,33 +697,33 @@
 				<table>
 					<tr>
 						<td class="head">
-							个性化游戏装备
+							<div class="title">核心加速引擎</div>
 						</td>
 					</tr>
-					<tr>
-						<td class="description">
-							结核心加速引擎技术结合了MSI优质线路布局和优化供电设计,带来了在点对点精度上更快且不失真的直接传输CPU供电。它不仅支持多核CPU，还为您的CPU超频创造了完美的条件。
-						</td>
-					</tr>
+					
 				</table>
 				<table class="core-boost w-p-100">
 					<tr>
-						<td class="va-top w-p-35 full-width f-right">
+						<td style="position: relative;">
+				    		<img class="circle" src="images/core-circle.png">
+				    	</td>
+						<td class="va-top w-p-40 full-width f-right">
 							<table class="core-boost-item w-p-100">
 								<tbody>
-									
+									<tr>
+										<td style="color: #FFF;font-size: 22px;">
+											<div style="margin-top:60px; ">
+												结核心加速引擎技术结合了MSI优质线路布局和优化供电设计,带来了在点对点精度上更快且不失真的直接传输CPU供电。它不仅支持多核CPU，还为您的CPU超频创造了完美的条件。
+											</div>
+										</td>
+									</tr>
 									
 								</tbody>
 							</table>
 						</td>
 					</tr>
 				</table>
-				<table>
-					<tr>
-						<td class="h-60">
-						</td>
-					</tr>
-				</table>
+
 				<!-- End Core boost -->
 
 				<!-- Extended heatsink -->
@@ -749,7 +736,7 @@
 										<table>
 											<tr>
 												<td class="head">
-													为更多核心更强性能而提供的散热解决方案
+													<div class="title">为更多核心更强性能而提供的散热解决方案</div>
 												</td>
 											</tr>
 											<tr>
@@ -766,9 +753,9 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 							</table>
 						</td>
 					</tr>
-					<tr>
+					<tr style="background: url(images/bg1.png);">
 						<td>
-							<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-extended_heaysink.png"
+							<img src="images/msi-extended_heaysink.png"
 										 alt="Extended Heaysink">
 						</td>
 					</tr>
@@ -789,7 +776,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										<table>
 											<tr>
 												<td class="head">
-													游戏优势全部呈现
+													<div class="title">游戏优势全部呈现</div>
 												</td>
 											</tr>
 											<tr>
@@ -800,22 +787,11 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										</table>
 										<table>
 											<tr>
-												<td class="subtitle text-center va-top">
-													Gaming Hotkey
-												</td>
-												<td class="subtitle text-center">
-													Gaming Device port
-												</td>
+												<img src="images/bg2.png">
 											</tr>
 											<tr>
-												<td class="multicpu-item">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/gaming-hotkey.jpg"
-													 alt="Gaming Hotkey">
-												</td>
-												<td class="multicpu-item">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/gaming-device-port.jpg"
-													 alt="Gaming Device port">
-												</td>
+												<td class="h-60">
+						</td>
 											</tr>
 										</table>
 									</td>
@@ -833,7 +809,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 												<td class="w-p-50 f-left full-width">
 													<table>
 														<tr>
-															<td class="subtitle text-center">Multi-GPU</td>
+															<td class="subtitle text-center">多卡互联</td>
 														</tr>
 														<tr>
 															<td>
@@ -845,7 +821,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 												<td class="w-p-48 f-right full-width">
 													<table>
 														<tr>
-															<td class="subtitle text-center">1 second overclocking</td>
+															<td class="subtitle text-center">1秒超频</td>
 														</tr>
 														<tr>
 															<td>
@@ -882,7 +858,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										<table class="w-p-100">
 											<tr>
 												<td class="head">
-													沉浸在虚拟世界中
+													<div class="title">沉浸在虚拟世界中</div>
 												</td>
 											</tr>
 											<tr>
@@ -897,37 +873,18 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 									<td>
 										<table class="w-p-100">
 											<tr>
-												<td class="vr-logos va-top w-p-35 f-left">
-													<table class="w-p-100">
-														<tr>
-															<td class="logo w-p-24">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-vr_ready-logo-light.png"
-																 alt="MSI VR Ready">
-															</td>
-															<td class="logo w-p-17">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/htc-vive-logo-light.png"
-																 alt="HTC Vive">
-															</td>
-															<td class="logo w-p-44">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/microsoft-hololens-logo.png"
-																 alt="Microsoft HoloLens">
-															</td>
-														</tr>
-													</table>
+												<td>
+													
+														
+															<img src="images/bg3.png">
+													
+													
 												</td>
-												<td class="va-top w-p-60 full-width f-right">
-													<table class="w-p-100">
-														<tr>
-															<td class="vr-item w-p-60">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/microsoft-hololens.png"
-																 alt="Microsoft HoloLens">
-															</td>
-															<td class="vr-item w-p-35">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/htc-vive.png" alt="HTC Vive">
-															</td>
-														</tr>
-													</table>
-												</td>
+												
+											</tr>
+											<tr>
+												<td class="h-60">
+						</td>
 											</tr>
 										</table>
 									</td>
@@ -935,10 +892,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 							</table>
 						</td>
 					</tr>
-					<tr>
-						<td class="h-60">
-						</td>
-					</tr>
+	
 				</table>
 				<!-- End Immerse yourself  -->
 
@@ -955,7 +909,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										<table class="w-p-100">
 											<tr>
 												<td class="head" style="line-height: 44px;">
-													使用第四代音皇技术 <br>感受充满震撼力的音效环境
+													<div class="title">使用第四代音皇技术 <br>感受充满震撼力的音效环境</div>
 												</td>
 											</tr>
 											<tr>
@@ -966,43 +920,18 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										</table>
 									</td>
 								</tr>
-								<tr>
-									<td class="va-bottom">
-										<table class="w-p-100">
-											<tr>
-												<td class="subtitle text-center w-p-33">
-													Isolated Audio with LED Line
-												</td>
-												<td class="subtitle text-center w-p-33">
-													Chemi-Con Audio capacitors
-												</td>
-												<td class="subtitle text-center w-p-33">
-													Nahimic 2+ Sound Tracker
-												</td>
-											</tr>
-											<tr>
-												<td class="audio-item w-p-33">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/led-border-mysticlight.jpg"
-													 alt="Isolated audio design with Isolated Audio with RGB LED Line">
-												</td>
-												<td class="audio-item w-p-33">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/chemi-con-capacitors.jpg"
-													 alt="Chemi-con Audio Capacitors">
-												</td>
-												<td class="audio-item w-p-33">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/nahimic-sound-tracker.jpg"
-													 alt="Nahimic Sound Tracker">
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
 							</table>
 						</td>
 					</tr>
+				</table>
+				<table>
 					<tr>
-						<td class="h-60">
+						<td>
+							<img src="images/bg4.png">
 						</td>
+
+					</tr>
+					<tr>
 						<td class="h-60">
 						</td>
 					</tr>
@@ -1013,127 +942,9 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 				<!-- USB -->
 
 				<!-- Lightning -->
-				<table class="w-p-100">
-					<tbody>
-						<tr>
-							<td class="va-top w-p-60 full-width f-left">
-								<table class="w-p-100">
-									<tbody>
-										<tr>
-											<td class="head">
-												强化USB设备性能
-											</td>
-										</tr>
-										<tr>
-											<td class="description">
-												提供宛如闪电般快速传输的USB 3.1接口，不论是在进行游戏、或是享受音乐和电影时，都能带给您有别与以往更快速的感官性能。
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</td>
-							<td class="va-top w-p-38 full-width f-right">
-								<table class="w-p-100">
-									<tr>
-										<td class="type-c text-center">
-											<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-motherboard-reversible_connector-usb_type_c-light.png"
-											 alt="Reversible connector USB Type-C">
-										</td>
-									</tr>
-									<tr>
-										<td class="a-center">
-											<span class="subtitle">
-												<strong>Reversible connector</strong>
-											</span>
-											<p class="subscript"></p>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<tbody>
-						<tr>
-							<td class="usb-lightning va-top w-p-100 full-width f-left">
-								<table class="cs-10">
-									<tr>
-										<td class="f-left w-p-10">
-										</td>
-										<td class="usb-lightning-logo f-left w-p-27">
-											<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-intel_turbo_usb-logo-light.png"
-											 alt="MSI Intel Turbo USB logo">
-										</td>
-									</tr>
-									<tr>
-										<td class="usb-lightning-logo f-left w-p-100">
-											<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-turbo_sub.png"
-											 alt="MSI Turbo Sub">
-										</td>
-										<td></td>
-									</tr>
-								</table>
-							</td>
-							<td class="usb-lightning-m w-p-60 text-center">
-								<table class="cs-10">
-									<tr>
-										<td class="usb-lightning-logo">
-											<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-turbo_sub_m.png"
-											 alt="MSI Turbo Sub">
-										</td>
-									</tr>
-									<tr>
-										<td class="usb-lightning-logo">
-											<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-intel_turbo_usb-logo-light.png"
-											 alt="MSI Intel Turbo USB logo">
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<tr>
-						<td class="va-top w-p-49 full-width f-left">
-							<table class="cs-10">
-								<tr>
-									<td class="subtitle a-right">
-										speed up with X-Boost
-									</td>
-								</tr>
-								<tr>
-									<td class="usb-x-boost">
-										<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-motherboard-x-boost_performance-graph-light.png"
-										 alt="MSI X-Boost performance">
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td class="va-top w-p-49 full-width f-right">
-							<table class="cs-10">
-								<tr>
-									<td class="subtitle red a-right">
-										Front USB 3.1 Gen2 Type-C
-									</td>
-								</tr>
-								<tr>
-									<td class="front-usb">
-										<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-motherboard-front_usb_gen2_type-c.png"
-										 alt="Front USB 3.1 Gen2 Type-C">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td class="h-60">
-						</td>
-						<td class="h-60">
-						</td>
-					</tr>
-				</table>
+
+
+
 				<!-- End Lightning -->
 
 
@@ -1149,52 +960,20 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 										<table class="w-p-100">
 											<tr>
 												<td class="head">
-													令人惊叹的内存性能
+													<div class="title">强化USB设备性能</div>
 												</td>
 											</tr>
 											<tr>
 												<td class="description">
-													微星主板具有更快的内存速度，更高的超频能力和更强的稳定性，为你的游戏飞速读取提供能量。
+													提供宛如闪电般快速传输的USB 3.1接口，不论是在进行游戏、或是享受音乐和电影时，都能带给您有别与以往更快速的感官性能。
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<td class="va-bottom">
-										<table class="ddr4-boost w-p-100 full-width">
-											<tr>
-												<td>
-													<table class="w-p-100">
-														<tr>
-															<td class="subtitle w-p-50">
-																<strong>Memory Signal Purity</strong>
-															</td>
-															<td class="legenda-text text-right">
-																MSI
-															</td>
-															<td class="text-left">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/caption-block-red.png"
-																 width="16" alt="MSI caption">
-															</td>
-															<td class="legenda-text text-right">
-																Others
-															</td>
-															<td class="text-left">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/caption-block-grey.png"
-																 width="16" alt="MSI caption">
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-											<tr>
-												<td class="memory-graph">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/msi-motherboard-ddr4_boost-memory_signal_purity-graph.png"
-													 alt="DDR4 Boost performance">
-												</td>
-											</tr>
-										</table>
+									<td>
+										<img src="images/bg5.png">
 									</td>
 								</tr>
 							</table>
@@ -1210,10 +989,15 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 												<td class="va-top w-p-100">
 													<table>
 														<tr style="text-align: center;">
-															<td class="head-2"> 最佳的兼容性 </td>
+															<td class="head"> <div class="title"></div>令人惊叹的内存性能 </td>
 														</tr>
 														<tr>
-															<td class="description" style="padding-top: 20px;"> 优化线路布局和完全隔离的内存电路设计确保强大的稳定性和性能，所以您无需担心游戏过程中系统崩溃。 </td>
+															<td style="position: relative;">
+																<img src="images/MSI-DDR4-BOOST.png">
+																<div style="position: absolute;top: 114px;right: 0;width: 264px;font-size: 25px;color: #FFF;z-index: 1;">
+																	微星主板具有更快的内存速度，更高的超频能力和更强的稳定性，为你的游戏飞速读取提供能量。
+																</div>
+															</td>
 														</tr>
 													</table>
 												</td>
@@ -1223,7 +1007,7 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 													<table class="ddr4-boost w-p-100 best-compatibility">
 														<tr style="text-align: center;">
 															<td class="memory-compatibility">
-																<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/best-compatibility-chart.png"
+																<img src="images/best-compatibility-chart.png"
 																 alt="Best compatibility chart">
 															</td>
 														</tr>
@@ -1252,11 +1036,11 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 						<td>
 							<table class="w-p-100">
 								<tr>
-									<td class="va-top w-p-70 full-width f-left">
+									<td class="full-width">
 										<table class="w-p-100">
 											<tr>
 												<td class="head">
-													低延迟主宰游戏
+													<div class="title">低延迟主宰游戏</div>
 												</td>
 											</tr>
 											<tr>
@@ -1266,29 +1050,13 @@ MSI主板上的扩展PWM和增强电路设计，确保即使是高端i7 CPU也�
 											</tr>
 										</table>
 									</td>
-									<td class="va-top a-right w-p-29 full-width f-right">
-										<table class="cp-3">
-											<tr>
-												<td class="subtitle text-center">
-													Powered by:
-												</td>
-											</tr>
-											<tr>
-												<td class="lan-logo text-center">
-													<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/intel-intelligent-networking.png"
-													 alt="Intel Intelligent Networking">
-												</td>
-											</tr>
-										</table>
-									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<td class="va-bottom w-p-50">
-							<img src="https://asset.msi.com/global/picture/image/feature/mb/Resellerpage/B360/B360GamingProCarbon/intel-gaming-lan-chart.png"
-							 class="w-p-100" alt="Optimize Killer Gaming LAN">
+						<td>
+							<img src="images/intel-gaming-lan-chart.png">
 						</td>
 					</tr>
 					<tr>
