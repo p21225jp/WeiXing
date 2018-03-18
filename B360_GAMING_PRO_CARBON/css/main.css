@@ -13,6 +13,7 @@
     -o-animation: colorrun 5s infinite;
     animation: colorrun 5s infinite;
 }
+
 @keyframes colorrun {
     from {
       -webkit-filter: hue-rotate(0deg);
@@ -26,6 +27,27 @@
 @-webkit-keyframes colorrun {
 	from {-webkit-filter: hue-rotate(0deg);}
 	to {-webkit-filter: hue-rotate(359deg);}
+}
+.blink {
+	-webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+@keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+@-webkit-keyframes blink {
+	from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
 }
 .circle {
 	position: absolute;
