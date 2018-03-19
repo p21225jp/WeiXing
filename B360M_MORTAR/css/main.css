@@ -1,18 +1,111 @@
+.warp_750 {
+  background: #000;
+  color: #fff;
+}
 .head {
     margin: 0 auto;
     text-align: center;
     padding: 0;
 }
-.head_title {
+.head .head_title {
     position: relative;
 }
-.head_title .abs{
+.head .head_title .abs{
     position: absolute;
     top: 29px;
     left: 22px;
     z-index: 10;
 }
+.kv .num_list {
+    padding-top: 60px;
+}
+.kv  li{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.kv i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e50014;
+    border-radius: 6px;
+    background: #e50014;
+    color: #fff;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.kv .num_list strong,.kv .num_list span {
+    font-size: 14px;
+}
+.kv .num_list strong {
+    color: #e50014;
+}
+.kv .num_list_bottom {
+    max-width: 750px;
+    padding: 20px 20px 0;
+}
+.kv .num_list_bottom ul {
 
+}
+.kv .num_list_bottom i {
+    background: #FFF;
+    color: #e50014;
+}
+.kv .num_list_bottom li {
+    width: 33.33%;
+    float: left;
+}
+.kv .num_list_bottom span {
+    line-height: 36px;
+}
+.title:after {
+    content: "";
+    background: url(../images/title_btm.png);
+    display: block;
+    width: 100%;
+    height: 6px;
+    -webkit-animation: blink 1s linear alternate infinite;
+    -o-animation: blink 1s linear alternate infinite;
+    animation: blink 1s linear alternate infinite;
+}
+.content {
+    padding: 50px 20px 20px;
+    font-size: 24px;
+    line-height: 40px;
+}
+.Cooling img{
+   max-width: 100%;
+}
+.Cooling .effect {
+    position: relative;
+}
+.Cooling .blink {
+    position: absolute;
+    top: 183px;
+    right: 136px;
+    -webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+.Memory img{
+   max-width: 100%;
+}
+.Speed_Engine .effect{
+    position:relative; 
+}
+.Speed_Engine .content {
+    position: absolute;
+    right: 0;
+    top: 78px;
+}
+.Speed_Engine .circle {
+    left: 33px;
+    top: 102px;
+}
+/*animation*/
 .color-run {
 	-webkit-animation: colorrun 5s infinite;
     -o-animation: colorrun 5s infinite;
@@ -33,6 +126,7 @@
 	from {-webkit-filter: hue-rotate(0deg);}
 	to {-webkit-filter: hue-rotate(359deg);}
 }
+
 .blink {
 	-webkit-animation: blink 1s linear alternate infinite;
     -o-animation: blink 1s linear alternate infinite;
@@ -56,8 +150,6 @@
 }
 .circle {
 	position: absolute;
-	left: 44px;
-	top: 64px;
 	-webkit-animation: circle 10s  linear infinite;
     -o-animation: circle 10s linear infinite;
     animation: circle 10s linear infinite;
