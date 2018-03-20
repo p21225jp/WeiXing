@@ -76,11 +76,11 @@
     font-size: 24px;
     line-height: 40px;
 }
+.effect {
+    position: relative;
+}
 .Cooling img{
    max-width: 100%;
-}
-.Cooling .effect {
-    position: relative;
 }
 .Cooling .blink {
     position: absolute;
@@ -93,9 +93,7 @@
 .Memory img{
    max-width: 100%;
 }
-.Speed_Engine .effect{
-    position:relative; 
-}
+
 .Speed_Engine .content {
     position: absolute;
     right: 0;
@@ -104,6 +102,11 @@
 .Speed_Engine .circle {
     left: 33px;
     top: 102px;
+}
+.RGB .change {
+    position: absolute;
+    left: 24px;
+    top: 186px;
 }
 /*animation*/
 .color-run {
