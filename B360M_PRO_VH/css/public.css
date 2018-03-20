@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Jackson Y (p21225jp@gmail.com)
+ * @date    2018-03-19 17:03:32
+ * @version $Id$
+ */
+*, *:before, *:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html {overflow-x:hidden;}
+body,h1,h2,h3,h4,dl,dt,dd,ul,ol,li,a,div,em,span,img,form,input,p,i,span{ padding:0; margin:0 auto; border:none;}
+html,body,div,span,i,a,ul,li,section{font-family:Helvetica,"Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+em,i{word-wrap: break-word;font-style:normal;}ul,li {list-style: none;}
+a{ color:#fff; text-decoration:none;outline: 0 none!important;}
+a:link,a:visited,a:active{color:#fff; text-decoration:none;outline: 0;}
+a,button,span,i,div,h2,aside{-webkit-user-select: none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input,button {-webkit-appearance: none; -moz-appearance: none;appearance: none; }
+button,input[type="button"]{border:none;}
+input:focus,textarea:focus{outline: 0 none;}
+input:focus::-webkit-input-placeholder { color:rgb(109,109,109); }
+input::-webkit-input-placeholder {color:#C2C2C2; }
+img{border: 0;margin: 0;padding: 0;vertical-align:middle;}
+h1,h2,h3,h4,h5{font-family:Helvetica,"Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+.clear:after { content: ""; display: block; height: 0; overflow: hidden; clear: both; visibility: hidden; }
+.float{float: left;}
+.overflow{overflow:hidden;}
+.transition{transition:all 0.2s ease;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;}
+.warp_750 {width: 750px;margin: 0 auto;padding: 0;}
+.warp_990{width: 990px;margin: 0 auto;padding: 0;}
+.warp_1920{width: 1920px;margin: 0 auto;padding: 0;}
+.opacity{filter:alpha(opacity=100);opacity:1;}
+.col_100{width: 100%;padding: 0 20px;}
+.col_80,.col_60,.col_40,.col_20{float: left;}
+.col_80{width: 80%;}
+.col_60{width: 60%;}
+.col_50{width: 50%;}
+.col_40{width: 40%;}
+.col_20{width: 20%;}
