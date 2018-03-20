@@ -87,7 +87,7 @@
 }
 .Cooling .blink {
     position: absolute;
-    top: 183px;
+    top: 130px;
     right: 136px;
     -webkit-animation: blink 1.5s linear alternate infinite;
     -o-animation: blink 1.5s linear alternate infinite;
