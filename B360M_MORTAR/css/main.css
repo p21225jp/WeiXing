@@ -20,11 +20,11 @@
     background: url(../images/kv_bg.png);
 }
 .kv .num_list {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .kv  li{
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .kv i {
     display: block;
