@@ -29,9 +29,10 @@ h1,h2,h3,h4,h5{font-family:Helvetica,"Microsoft YaHei UI","Microsoft YaHei","Wen
 .warp_1920{width: 1920px;margin: 0 auto;padding: 0;}
 .opacity{filter:alpha(opacity=100);opacity:1;}
 .col_100{width: 100%;padding: 0 20px;}
-.col_80,.col_60,.col_40,.col_20{float: left;}
+.col_80,.col_60,.col_40,.col_45,.col_20{float: left;}
 .col_80{width: 80%;}
 .col_60{width: 60%;}
 .col_50{width: 50%;}
+.col_45{width: 45%;}
 .col_40{width: 40%;}
 .col_20{width: 20%;}

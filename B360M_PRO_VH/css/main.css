@@ -2,22 +2,26 @@
   background: #000;
   color: #fff;
 }
-.head {
-    margin: 0 auto;
-    text-align: center;
-    padding: 0;
-}
-.head .head_title {
-    position: relative;
-}
-.head .head_title .abs{
-    position: absolute;
-    top: 29px;
-    left: 22px;
-    z-index: 10;
-}
+
 .kv {
-    background: url(../images/kv_bg.png);
+    background: url(../images/kv_bg.png) no-repeat;
+}
+.kv .head_title {
+    padding: 0 20px;
+}
+.kv .head_title .title{
+    margin-left: 80px;
+    float: left;
+}
+.kv .head_title .logo {
+    float: left;
+    line-height: 100px;
+    margin-left: 20px;
+}
+.kv .head_title .title span {
+    font-size: 46px;
+    font-weight: bold;;
+    text-shadow: 29px rgba(0,114,255,.6);
 }
 .kv .num_list {
     padding-top: 20px;
@@ -30,9 +34,9 @@
     display: block;
     width: 36px;
     height: 36px;
-    border: 1px solid #e50014;
+    border: 1px solid #019cfe;
     border-radius: 6px;
-    background: #e50014;
+    background: #019cfe;
     color: #fff;
     font-weight: bold;
     line-height: 34px;
@@ -44,7 +48,7 @@
     font-size: 14px;
 }
 .kv .num_list strong {
-    color: #e50014;
+    color: #019cfe;
 }
 .kv .num_list_bottom {
     max-width: 750px;
@@ -55,7 +59,7 @@
 }
 .kv .num_list_bottom i {
     background: #FFF;
-    color: #e50014;
+    color: #019cfe;
 }
 .kv .num_list_bottom li {
     width: 33.33%;
@@ -64,15 +68,29 @@
 .kv .num_list_bottom span {
     line-height: 36px;
 }
+.title {
+    background: url(../images/title_bg.png) no-repeat;
+    background-position: top center;
+    text-align: center;
+}
 .title:after {
     content: "";
-    background: url(../images/title_btm.png);
+    background: url(../images/title_btm.png) no-repeat;
+    background-position: top center;
     display: block;
     width: 100%;
-    height: 6px;
+    height: 19px;
     -webkit-animation: blink 1s linear alternate infinite;
     -o-animation: blink 1s linear alternate infinite;
     animation: blink 1s linear alternate infinite;
+}
+.title .main_title {
+    font-size: 36px;
+    color: #28b5ff;
+}
+.title .sub_title {
+    font-size: 25px;
+    color: #28b5ff;
 }
 .content {
     padding: 50px 20px 20px;
@@ -82,6 +100,7 @@
 .effect {
     position: relative;
 }
+
 .Cooling img{
    max-width: 100%;
 }
@@ -100,11 +119,14 @@
 .Speed_Engine .content {
     position: absolute;
     right: 0;
-    top: 78px;
+    top: 32px;
 }
 .Speed_Engine .circle {
-    left: 33px;
-    top: 102px;
+    left: 47px;
+    top: 59px;
+}
+.SP {
+    padding: 40px 0;
 }
 .RGB .change {
     position: absolute;
