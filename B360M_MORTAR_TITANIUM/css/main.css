@@ -17,7 +17,7 @@
     z-index: 10;
 }
 .kv {
-    background: url(../images/kv_bg.png);
+    
 }
 .kv .num_list {
     padding-top: 20px;
@@ -78,6 +78,9 @@
     padding: 50px 20px 20px;
     font-size: 24px;
     line-height: 40px;
+}
+.ps {
+    font-size: 12px;
 }
 .effect {
     position: relative;

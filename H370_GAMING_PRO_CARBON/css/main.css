@@ -1,0 +1,75 @@
+.head-title {
+	font-size: 36px;
+	line-height: 36px;
+
+	height: 117px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+.color-run {
+	-webkit-animation: colorrun 5s infinite;
+    -o-animation: colorrun 5s infinite;
+    animation: colorrun 5s infinite;
+}
+
+@keyframes colorrun {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(359deg);
+      filter: hue-rotate(359deg);
+    }
+}
+@-webkit-keyframes colorrun {
+	from {-webkit-filter: hue-rotate(0deg);}
+	to {-webkit-filter: hue-rotate(359deg);}
+}
+.blink {
+	-webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+@keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+@-webkit-keyframes blink {
+	from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+.circle {
+	position: absolute;
+	left: 44px;
+	top: 64px;
+	-webkit-animation: circle 10s  linear infinite;
+    -o-animation: circle 10s linear infinite;
+    animation: circle 10s linear infinite;
+}
+@keyframes circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+    	transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes circle {
+	from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+    	-webkit-transform: rotate(359deg);
+    }
+}

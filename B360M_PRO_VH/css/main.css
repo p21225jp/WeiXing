@@ -9,7 +9,7 @@
 .kv .head_title {
     padding: 0 20px;
 }
-.kv .head_title .title{
+.kv .head_title .top_title{
     margin-left: 80px;
     float: left;
 }
@@ -18,11 +18,7 @@
     line-height: 100px;
     margin-left: 20px;
 }
-.kv .head_title .title span {
-    font-size: 46px;
-    font-weight: bold;;
-    text-shadow: 29px rgba(0,114,255,.6);
-}
+
 .kv .num_list {
     padding-top: 20px;
 }
@@ -127,6 +123,15 @@
     position: absolute;
     top: 183px;
     right: 136px;
+    -webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+
+.USB .blink {
+    position: absolute;
+    top: 143px;
+    left: 20px;
     -webkit-animation: blink 1.5s linear alternate infinite;
     -o-animation: blink 1.5s linear alternate infinite;
     animation: blink 1.5s linear alternate infinite;
