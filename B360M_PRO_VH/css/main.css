@@ -68,6 +68,25 @@
 .kv .num_list_bottom span {
     line-height: 36px;
 }
+.kv .port {
+    width: 50%;
+    width: 128px;
+    height: 117px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.kv .port_vga {
+    background: url(../images/msi-vga_port.png) no-repeat;
+}
+.kv .port_hdmi {
+    background: url(../images/msi-hdmi_port.png) no-repeat;
+}
+.kv .port span {
+    opacity: 0;
+}
+.kv .port:hover span{
+    opacity: 1;
+}
 .title {
     background: url(../images/title_bg.png) no-repeat;
     background-position: top center;
