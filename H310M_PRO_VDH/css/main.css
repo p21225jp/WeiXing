@@ -1,0 +1,230 @@
+.warp_750 {
+  background: #000;
+  color: #fff;
+}
+
+.kv {
+    background: url(../images/kv_bg.png) no-repeat;
+}
+.kv .head_title {
+    padding: 0 20px;
+}
+.kv .head_title .top_title{
+    margin-left: 80px;
+    float: left;
+}
+.kv .head_title .logo {
+    float: left;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.kv .num_list {
+    padding-top: 20px;
+}
+.kv  li{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.kv i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #019cfe;
+    border-radius: 6px;
+    background: #019cfe;
+    color: #fff;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.kv .num_list strong,.kv .num_list span {
+    font-size: 14px;
+}
+.kv .num_list strong {
+    color: #019cfe;
+}
+.kv .num_list_bottom {
+    max-width: 750px;
+    padding: 20px 20px 0;
+}
+.kv .num_list_bottom ul {
+
+}
+.kv .num_list_bottom i {
+    background: #FFF;
+    color: #019cfe;
+}
+.kv .num_list_bottom li {
+    width: 33.33%;
+    float: left;
+}
+.kv .num_list_bottom span {
+    line-height: 36px;
+}
+.kv .port {
+    width: 50%;
+    width: 128px;
+    height: 117px;
+    vertical-align: bottom;
+    float: left;
+    padding-top: 101px; 
+}
+.kv .port_vga {
+    background: url(../images/msi-vga_port.png) no-repeat;
+}
+.kv .port_hdmi {
+    background: url(../images/msi-hdmi_port.png) no-repeat;
+}
+.kv .port_dvi {
+    margin-top: 10px;
+    background: url(../images/msi-dvi-d_port.png) no-repeat;
+}
+
+.kv .port span {
+    opacity: 0;
+}
+.kv .port:hover span{
+    opacity: 1;
+}
+.title {
+    background: url(../images/title_bg.png) no-repeat;
+    background-position: top center;
+    text-align: center;
+}
+.title:after {
+    content: "";
+    background: url(../images/title_btm.png) no-repeat;
+    background-position: top center;
+    display: block;
+    width: 100%;
+    height: 19px;
+    -webkit-animation: blink 1s linear alternate infinite;
+    -o-animation: blink 1s linear alternate infinite;
+    animation: blink 1s linear alternate infinite;
+}
+.title .main_title {
+    font-size: 36px;
+    color: #28b5ff;
+}
+.title .sub_title {
+    font-size: 25px;
+    color: #28b5ff;
+}
+.content {
+    padding: 50px 20px 20px;
+    font-size: 24px;
+    line-height: 40px;
+}
+.effect {
+    position: relative;
+}
+
+.Cooling img{
+   max-width: 100%;
+}
+.Cooling .blink {
+    position: absolute;
+    top: 183px;
+    right: 136px;
+    -webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+
+.USB .blink {
+    position: absolute;
+    top: 143px;
+    left: 20px;
+    -webkit-animation: blink 1.5s linear alternate infinite;
+    -o-animation: blink 1.5s linear alternate infinite;
+    animation: blink 1.5s linear alternate infinite;
+}
+.Memory img{
+   max-width: 100%;
+}
+
+.Speed_Engine .content {
+    position: absolute;
+    right: 0;
+    top: 32px;
+}
+.Speed_Engine .circle {
+    left: 47px;
+    top: 59px;
+}
+.SP {
+    padding: 40px 0;
+}
+.RGB .change {
+    position: absolute;
+    left: 24px;
+    top: 62px;
+}
+/*animation*/
+.color-run {
+	-webkit-animation: colorrun 5s infinite;
+    -o-animation: colorrun 5s infinite;
+    animation: colorrun 5s infinite;
+}
+
+@keyframes colorrun {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(359deg);
+      filter: hue-rotate(359deg);
+    }
+}
+@-webkit-keyframes colorrun {
+	from {-webkit-filter: hue-rotate(0deg);}
+	to {-webkit-filter: hue-rotate(359deg);}
+}
+
+.blink {
+	-webkit-animation: blink 1s linear alternate infinite;
+    -o-animation: blink 1s linear alternate infinite;
+    animation: blink 1s linear alternate infinite;
+}
+@keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+@-webkit-keyframes blink {
+	from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+.circle {
+	position: absolute;
+	-webkit-animation: circle 10s  linear infinite;
+    -o-animation: circle 10s linear infinite;
+    animation: circle 10s linear infinite;
+}
+@keyframes circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+    	transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes circle {
+	from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+    	-webkit-transform: rotate(359deg);
+    }
+}
