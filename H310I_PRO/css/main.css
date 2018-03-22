@@ -68,12 +68,8 @@
     width: 50%;
     width: 128px;
     height: 117px;
+    display: table-cell;
     vertical-align: bottom;
-    float: left;
-    padding-top: 101px; 
-}
-.kv .port_title {
-    background: url(../images/msi_port_title.png) no-repeat;
 }
 .kv .port_vga {
     background: url(../images/msi-vga_port.png) no-repeat;
@@ -81,11 +77,6 @@
 .kv .port_hdmi {
     background: url(../images/msi-hdmi_port.png) no-repeat;
 }
-.kv .port_dvi {
-    margin-top: 10px;
-    background: url(../images/msi-dvi-d_port.png) no-repeat;
-}
-
 .kv .port span {
     opacity: 0;
 }
